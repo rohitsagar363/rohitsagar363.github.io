@@ -3,336 +3,427 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rohith Sagar Karnala | Senior Data Engineer</title>
-    <meta name="description" content="Senior Data Engineer building governed lakehouses, streaming platforms, and AI-enabled data products across AWS and Azure.">
-    <meta property="og:title" content="Rohith Sagar Karnala | Senior Data Engineer">
-    <meta property="og:description" content="Portfolio for Rohith Sagar Karnala, focused on cloud data platforms, migration, governance, and production-grade analytics systems.">
+    <title>DenialFlow | Claims Denial Exception Manager</title>
+    <meta
+      name="description"
+      content="DenialFlow is a browser-based claims denial exception manager for provider revenue cycle teams. Upload denial queues, classify issues, prioritize appeals, and review AI-assisted recommendations."
+    >
+    <meta property="og:title" content="DenialFlow | Claims Denial Exception Manager">
+    <meta
+      property="og:description"
+      content="Upload denial queues, classify denial reasons, generate next-best actions, and review analyst-ready appeal drafts in a single workspace."
+    >
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/images/og-card.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
-    <div class="page-shell">
+    <div class="app-shell">
       <header class="site-header">
-        <a class="brand" href="#top">
-          <span class="brand-mark">RS</span>
-          <span class="brand-text">Rohith Sagar Karnala</span>
+        <a class="brand" href="#overview">
+          <span class="brand-mark">DF</span>
+          <span class="brand-copy">
+            <strong>DenialFlow</strong>
+            <span>Claims denial exception manager</span>
+          </span>
         </a>
+
         <nav class="site-nav" aria-label="Primary">
-          <a href="#case-studies">Case studies</a>
-          <a href="#experience">Experience</a>
-          <a href="#toolkit">Toolkit</a>
-          <a href="#contact">Contact</a>
+          <a href="#overview">Overview</a>
+          <a href="#import">Import</a>
+          <a href="#workspace">Workspace</a>
+          <a href="#commercial">Commercial</a>
+          <a href="#engineering">Engineering</a>
         </nav>
       </header>
 
-      <main id="top">
-        <section class="hero section">
+      <main>
+        <section id="overview" class="hero-panel section">
           <div class="hero-copy">
-            <p class="eyebrow">Senior Data Engineer | AWS | Azure | Databricks | GenAI</p>
-            <h1>Data platforms with enterprise discipline, not demo energy.</h1>
+            <p class="eyebrow">Provider RCM teams | denials and appeals | human-approved AI</p>
+            <h1>Cut denial backlog and surface the next best action.</h1>
             <p class="hero-summary">
-              I build governed lakehouses, metadata-driven ETL frameworks, and streaming systems for healthcare,
-              pharma, and analytics-heavy teams. The work usually sits at the intersection of architecture,
-              implementation, reliability, and delivery pressure.
+              This MVP ingests denial work queues, normalizes messy exports, classifies denial reasons,
+              recommends next actions, drafts appeal notes, and keeps every recommendation reviewable by
+              analysts and team leads.
             </p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="#case-studies">See case studies</a>
-              <a class="button button-secondary" href="assets/resume/Rohith_Sagar_Karnala_Senior_Data_Engineer.pdf" target="_blank" rel="noopener">Resume</a>
+              <button class="button button-primary" type="button" id="load-sample-button">Load sample denial queue</button>
+              <a class="button button-secondary" href="#import">Upload CSV</a>
             </div>
 
-            <ul class="contact-strip">
-              <li><a href="mailto:rohithsagarkarnala@gmail.com">rohithsagarkarnala@gmail.com</a></li>
-              <li><a href="https://www.linkedin.com/in/rohithsagar" target="_blank" rel="noopener">LinkedIn</a></li>
-              <li><a href="https://github.com/rohitsagar363" target="_blank" rel="noopener">GitHub</a></li>
-              <li>Buffalo, New York</li>
+            <ul class="hero-list">
+              <li>CSV-first onboarding for pilot workflows</li>
+              <li>Fixed denial taxonomy with priority scoring</li>
+              <li>Analyst review state, audit trail, and ROI reporting</li>
             </ul>
           </div>
 
-          <aside class="hero-panel">
-            <div class="avatar-block">
-              <img src="assets/images/avatar.svg" alt="Illustrated avatar of Rohith Sagar Karnala" class="avatar-image">
+          <div class="hero-aside">
+            <div class="stat-grid">
+              <article class="stat-card">
+                <p class="stat-label">Queue readiness</p>
+                <strong id="hero-case-count">0 cases</strong>
+                <span>Imported and normalized into the canonical schema</span>
+              </article>
+              <article class="stat-card">
+                <p class="stat-label">Priority dollars</p>
+                <strong id="hero-risk-value">$0</strong>
+                <span>Total dollars at risk in the current queue</span>
+              </article>
+              <article class="stat-card">
+                <p class="stat-label">Analyst trust</p>
+                <strong id="hero-acceptance-rate">0%</strong>
+                <span>Acceptance rate based on analyst review decisions</span>
+              </article>
+              <article class="stat-card">
+                <p class="stat-label">Coverage</p>
+                <strong>8 categories</strong>
+                <span>Controlled denial taxonomy for v1 workflows</span>
+              </article>
             </div>
-            <div class="hero-metric-stack">
-              <div class="metric-card metric-card-wide">
-                <p class="metric-label">Signature pattern</p>
-                <strong>Migration + governance + cost control</strong>
-                <span>Turning legacy data estates into reliable cloud platforms with measurable operational gains.</span>
-              </div>
-              <div class="metric-grid">
-                <article class="metric-card">
-                  <p class="metric-label">Scale</p>
-                  <strong>450+</strong>
-                  <span>pipelines migrated to an AWS lakehouse</span>
-                </article>
-                <article class="metric-card">
-                  <p class="metric-label">Efficiency</p>
-                  <strong>50%</strong>
-                  <span>compute cost reduction from workload tuning</span>
-                </article>
-                <article class="metric-card">
-                  <p class="metric-label">Reliability</p>
-                  <strong>99.8%</strong>
-                  <span>data fidelity through automated validation</span>
-                </article>
-                <article class="metric-card">
-                  <p class="metric-label">Environment</p>
-                  <strong>HIPAA</strong>
-                  <span>and GxP-aware data delivery</span>
-                </article>
-              </div>
+
+            <div class="taxonomy-panel">
+              <p class="taxonomy-label">Denial taxonomy</p>
+              <div class="taxonomy-chips" id="taxonomy-chips"></div>
             </div>
-          </aside>
+          </div>
         </section>
 
-        <section class="summary-band section">
-          <article>
-            <p class="summary-band-label">What I optimize for</p>
-            <h2>Systems that analysts trust and operators do not babysit.</h2>
-          </article>
-          <article>
-            <p>My strongest work is not one-off notebooks. It is platform design: ingestion, transformation, governance, orchestration, quality checks, cost control, and delivery into BI or AI use cases.</p>
-          </article>
-        </section>
-
-        <section class="proof-grid section">
-          <article class="proof-card">
-            <p class="proof-index">01</p>
-            <h3>Lakehouse modernization</h3>
-            <p>Migrate brittle batch estates into Iceberg and Delta Lake patterns with lineage, access control, and curated marts.</p>
-          </article>
-          <article class="proof-card">
-            <p class="proof-index">02</p>
-            <h3>Metadata-driven execution</h3>
-            <p>Reduce repetitive ETL work through modular PySpark frameworks, generated logic, and standardized orchestration.</p>
-          </article>
-          <article class="proof-card">
-            <p class="proof-index">03</p>
-            <h3>AI grounded in data engineering</h3>
-            <p>Use RAG, streaming, and recommendation systems where ingestion, data modeling, and feedback loops are first-class concerns.</p>
-          </article>
-        </section>
-
-        <section id="case-studies" class="section">
+        <section id="import" class="section import-layout">
           <div class="section-heading">
-            <p class="section-kicker">Selected case studies</p>
-            <h2>The work I would want a hiring manager to read first.</h2>
+            <p class="section-kicker">Import and mapping</p>
+            <h2>Take a raw denial queue export and normalize it in minutes.</h2>
           </div>
 
-          <div class="case-study-grid">
-            <article class="case-study case-study-featured">
-              <div class="case-study-head">
-                <p class="case-study-tag">Enterprise platform</p>
-                <h3>AWS lakehouse migration for clinical research data</h3>
+          <div class="panel-grid">
+            <section class="panel">
+              <div class="panel-header">
+                <div>
+                  <p class="panel-kicker">1. Upload source data</p>
+                  <h3>Queue intake</h3>
+                </div>
+                <span class="pill">CSV or spreadsheet export</span>
               </div>
-              <p class="case-study-body">
-                Architected a petabyte-scale Apache Iceberg lakehouse on S3 for Bristol Myers Squibb, migrating 450+ legacy ETL
-                pipelines with Glue, Redshift, Lake Formation, Step Functions, and EventBridge. The result was a governed, analytics-ready
-                platform with stronger lineage, better access control, and lower operational overhead.
+
+              <p class="panel-copy">
+                Start with a denial work queue export from your billing or RCM system. For pilots, manual upload is the source of truth.
               </p>
-              <ul class="fact-list">
-                <li>450+ legacy ETL pipelines modernized</li>
-                <li>35% cloud spend reduction through EMR Serverless and FinOps work</li>
-                <li>HIPAA and GxP compliance with fine-grained masking controls</li>
+
+              <div class="upload-actions">
+                <label class="button button-primary upload-label" for="csv-input">Choose CSV file</label>
+                <input id="csv-input" type="file" accept=".csv,text/csv">
+                <button class="button button-secondary" type="button" id="load-demo-file-button">Load built-in demo data</button>
+              </div>
+
+              <div class="upload-meta">
+                <p id="upload-status">No file uploaded yet. Use the built-in demo to explore the workflow.</p>
+                <a class="text-link" href="assets/data/sample_denials.csv" download>Download sample CSV</a>
+              </div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-header">
+                <div>
+                  <p class="panel-kicker">2. Map fields</p>
+                  <h3>Canonical denial schema</h3>
+                </div>
+                <span class="pill" id="mapping-status">Awaiting upload</span>
+              </div>
+
+              <p class="panel-copy">
+                The MVP maps source columns into a fixed schema: claim ID, payer, denial code, amount at risk, age, status, specialty,
+                last note, attachments present, and due date.
+              </p>
+
+              <div id="mapping-wizard" class="mapping-wizard empty-state">
+                Upload a file or load the demo queue to map incoming columns.
+              </div>
+
+              <div class="mapping-actions">
+                <button class="button button-primary" type="button" id="apply-mapping-button" disabled>Normalize queue</button>
+                <button class="button button-secondary" type="button" id="reset-workspace-button">Reset workspace</button>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section id="workspace" class="section workspace-layout">
+          <div class="section-heading">
+            <p class="section-kicker">Analyst workspace</p>
+            <h2>Classify, prioritize, review, and track the queue.</h2>
+          </div>
+
+          <div class="metrics-grid" id="metrics-grid">
+            <article class="metric-card">
+              <p class="metric-label">Cases in queue</p>
+              <strong id="metric-total-cases">0</strong>
+              <span>Normalized denial cases available for review</span>
+            </article>
+            <article class="metric-card">
+              <p class="metric-label">Dollars at risk</p>
+              <strong id="metric-total-risk">$0</strong>
+              <span>Aggregate value across imported denial cases</span>
+            </article>
+            <article class="metric-card">
+              <p class="metric-label">High priority queue</p>
+              <strong id="metric-high-priority">0</strong>
+              <span>Cases above the recommended escalation threshold</span>
+            </article>
+            <article class="metric-card">
+              <p class="metric-label">Estimated time saved</p>
+              <strong id="metric-time-saved">0h</strong>
+              <span>Based on analyst review assistance across the queue</span>
+            </article>
+          </div>
+
+          <div class="workspace-grid">
+            <section class="panel queue-panel">
+              <div class="panel-header">
+                <div>
+                  <p class="panel-kicker">3. Review queue</p>
+                  <h3>Prioritized denials</h3>
+                </div>
+                <span class="pill" id="queue-summary">No cases loaded</span>
+              </div>
+
+              <div class="queue-filters">
+                <label>
+                  <span>Status</span>
+                  <select id="status-filter">
+                    <option value="all">All review states</option>
+                    <option value="pending">Pending</option>
+                    <option value="accepted">Accepted</option>
+                    <option value="edited">Edited</option>
+                    <option value="rejected">Rejected</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Category</span>
+                  <select id="category-filter">
+                    <option value="all">All categories</option>
+                  </select>
+                </label>
+              </div>
+
+              <div id="queue-list" class="queue-list empty-state">
+                Load a queue to generate recommendations and start analyst review.
+              </div>
+            </section>
+
+            <section class="panel detail-panel">
+              <div class="panel-header">
+                <div>
+                  <p class="panel-kicker">4. Case detail</p>
+                  <h3>Recommendation review</h3>
+                </div>
+                <span class="pill" id="detail-pill">Select a case</span>
+              </div>
+
+              <div id="case-detail" class="detail-card empty-state">
+                Select a denial case from the queue to inspect the recommendation, checklist, and draft note.
+              </div>
+            </section>
+          </div>
+
+          <div class="panel-grid">
+            <section class="panel">
+              <div class="panel-header">
+                <div>
+                  <p class="panel-kicker">5. Outcome reporting</p>
+                  <h3>Operational dashboard</h3>
+                </div>
+                <span class="pill">Live metrics</span>
+              </div>
+
+              <div class="dashboard-grid">
+                <article class="mini-card">
+                  <p>Backlog by category</p>
+                  <div id="dashboard-category-breakdown" class="breakdown-list empty-state">No data yet</div>
+                </article>
+                <article class="mini-card">
+                  <p>Aging buckets</p>
+                  <div id="dashboard-aging-breakdown" class="breakdown-list empty-state">No data yet</div>
+                </article>
+                <article class="mini-card">
+                  <p>Acceptance vs edits</p>
+                  <div id="dashboard-review-breakdown" class="breakdown-list empty-state">No data yet</div>
+                </article>
+                <article class="mini-card">
+                  <p>Top payer exposure</p>
+                  <div id="dashboard-payer-breakdown" class="breakdown-list empty-state">No data yet</div>
+                </article>
+              </div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-header">
+                <div>
+                  <p class="panel-kicker">6. Audit trail</p>
+                  <h3>Human review log</h3>
+                </div>
+                <span class="pill">Required for trust</span>
+              </div>
+
+              <div id="audit-log" class="audit-log empty-state">
+                Analyst review actions will appear here after cases are accepted, edited, or rejected.
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section id="commercial" class="section commercial-layout">
+          <div class="section-heading">
+            <p class="section-kicker">Commercial blueprint</p>
+            <h2>How this MVP becomes a product and gets sold.</h2>
+          </div>
+
+          <div class="panel-grid">
+            <section class="panel">
+              <div class="panel-header">
+                <div>
+                  <p class="panel-kicker">Pilot packaging</p>
+                  <h3>Paid design-partner motion</h3>
+                </div>
+              </div>
+
+              <ul class="bullet-list">
+                <li>Target provider RCM leaders with visible denial backlog and spreadsheet-heavy workflows.</li>
+                <li>Sell a 4-6 week pilot focused on one denial category or specialty.</li>
+                <li>Use weekly CSV uploads, analyst review logs, and dashboard reporting to prove ROI fast.</li>
+                <li>Track time per case, throughput, dollars at risk, and documentation consistency.</li>
               </ul>
-            </article>
+            </section>
 
-            <article class="case-study">
-              <div class="case-study-head">
-                <p class="case-study-tag">Enterprise platform</p>
-                <h3>Azure Databricks lakehouse for healthcare analytics</h3>
+            <section class="panel">
+              <div class="panel-header">
+                <div>
+                  <p class="panel-kicker">Pricing and scale</p>
+                  <h3>Value-based expansion</h3>
+                </div>
               </div>
-              <p class="case-study-body">
-                Replaced fragmented SQL Server data flows with a medallion lakehouse using ADF and Databricks, improving delivery
-                for PHI-governed insurance analytics and creating a cleaner path to curated reporting datasets.
-              </p>
-              <ul class="fact-list">
-                <li>Bronze, Silver, Gold data architecture</li>
-                <li>Data quality checks embedded into delivery workflows</li>
-                <li>Power BI-ready curated data models for downstream teams</li>
+
+              <ul class="bullet-list">
+                <li>Charge a paid pilot fee, then convert to annual SaaS pricing based on cases processed.</li>
+                <li>Expand from denial triage into appeal drafting, root-cause analytics, and auth exceptions.</li>
+                <li>Add SFTP and API intake only after CSV-first pilots prove repeatable value.</li>
+                <li>Keep human approval mandatory until customers trust the workflow and audit controls.</li>
               </ul>
-            </article>
-
-            <article class="case-study">
-              <div class="case-study-head">
-                <p class="case-study-tag">Public build</p>
-                <h3>Clinical trial lakehouse observatory</h3>
-              </div>
-              <p class="case-study-body">
-                Original local-first lakehouse project that generates synthetic clinical-trial data, lands bronze and silver parquet zones,
-                enforces quality checks, and serves gold marts for site performance, study KPIs, and participant risk monitoring.
-              </p>
-              <div class="case-study-actions">
-                <a class="text-link" href="https://github.com/rohitsagar363/rohitsagar363.github.io/tree/main/project-blueprints/clinical-trial-lakehouse-observatory" target="_blank" rel="noopener">GitHub project</a>
-              </div>
-            </article>
-
-            <article class="case-study">
-              <div class="case-study-head">
-                <p class="case-study-tag">Public build</p>
-                <h3>NASA planetary defense monitoring on Databricks</h3>
-              </div>
-              <p class="case-study-body">
-                Built a production-style medallion pipeline for NASA NeoWs data with watermark-based ingestion, Python-native JSON
-                flattening, Delta merge logic, Unity Catalog governance, and dashboard-ready threat metrics.
-              </p>
-              <div class="case-study-actions">
-                <a class="text-link" href="https://github.com/rohitsagar363/databricks-asteroid-monitoring" target="_blank" rel="noopener">GitHub repo</a>
-              </div>
-            </article>
-
-            <article class="case-study">
-              <div class="case-study-head">
-                <p class="case-study-tag">Public build</p>
-                <h3>Streaming recommendation engine for NPTE prep</h3>
-              </div>
-              <p class="case-study-body">
-                Designed a streaming-first learning intelligence system using Redpanda, Flink, PostgreSQL, Neo4j, and Python to detect
-                weak topics in real time and turn them into graph-based study recommendations.
-              </p>
-              <div class="case-study-actions">
-                <a class="text-link" href="https://github.com/rohitsagar363/npte-learning-streaming-prototype" target="_blank" rel="noopener">GitHub repo</a>
-              </div>
-            </article>
-
-            <article class="case-study">
-              <div class="case-study-head">
-                <p class="case-study-tag">Public build</p>
-                <h3>Async ETL for Talkdesk reporting pipelines</h3>
-              </div>
-              <p class="case-study-body">
-                Built a config-driven async ingestion framework with retries, backoff, monitoring, and both local and Databricks execution paths.
-                It is a clean example of Python-heavy, production-minded data engineering.
-              </p>
-              <div class="case-study-actions">
-                <a class="text-link" href="https://github.com/rohitsagar363/talkdesk-async-etl" target="_blank" rel="noopener">GitHub repo</a>
-              </div>
-            </article>
+            </section>
           </div>
         </section>
 
-        <section id="experience" class="section experience-layout">
+        <section id="engineering" class="section commercial-layout">
           <div class="section-heading">
-            <p class="section-kicker">Experience</p>
-            <h2>Recent path and why it is relevant.</h2>
+            <p class="section-kicker">Engineering builds</p>
+            <h2>Standalone projects that back up the portfolio.</h2>
           </div>
 
-          <div class="timeline">
-            <article class="timeline-item">
-              <p class="timeline-period">2021 - 2024</p>
-              <div>
-                <h3>Data Engineer, Modak Analytics</h3>
-                <p>Built internal frameworks and client platforms across AWS and Azure, combining product engineering with enterprise delivery.</p>
+          <div class="panel-grid">
+            <section class="panel">
+              <div class="panel-header">
+                <div>
+                  <p class="panel-kicker">Lakehouse</p>
+                  <h3>Clinical Trial Lakehouse Observatory</h3>
+                </div>
+                <span class="pill">Bronze / Silver / Gold</span>
               </div>
-            </article>
-            <article class="timeline-item">
-              <p class="timeline-period">Modak product work</p>
-              <div>
-                <h3>Nabu and Yeedu</h3>
-                <p>Developed modular PySpark frameworks, Airflow operator support, CI-friendly deployment patterns, and internal knowledge intelligence experiments.</p>
-              </div>
-            </article>
-            <article class="timeline-item">
-              <p class="timeline-period">2024 - 2026</p>
-              <div>
-                <h3>University at Buffalo, M.S. in Computer Science and Engineering</h3>
-                <p>Strengthened depth in data-intensive computing, machine learning, deep learning, security, and systems foundations.</p>
-              </div>
-            </article>
-          </div>
-        </section>
 
-        <section id="toolkit" class="section toolkit-layout">
-          <div class="section-heading">
-            <p class="section-kicker">Toolkit</p>
-            <h2>Platforms I can actually ship with.</h2>
-          </div>
+              <p class="panel-copy">
+                Synthetic clinical-trial platform with governed bronze, silver, and gold layers, quality checks,
+                patient risk monitoring, and study KPI marts.
+              </p>
 
-          <div class="toolkit-board">
-            <article class="tool-cluster">
-              <p class="tool-cluster-label">Cloud and storage</p>
-              <div class="chip-grid">
-                <span>AWS Glue</span>
-                <span>Amazon EMR</span>
-                <span>S3</span>
-                <span>Redshift</span>
-                <span>Lake Formation</span>
-                <span>Azure Databricks</span>
-                <span>ADF</span>
-                <span>Synapse</span>
-                <span>Snowflake</span>
-                <span>Delta Lake</span>
-                <span>Apache Iceberg</span>
-              </div>
-            </article>
-            <article class="tool-cluster">
-              <p class="tool-cluster-label">Pipelines and quality</p>
-              <div class="chip-grid">
-                <span>PySpark</span>
-                <span>Scala</span>
-                <span>dbt</span>
-                <span>Airflow</span>
-                <span>Dagster</span>
-                <span>Terraform</span>
-                <span>Docker</span>
-                <span>GitHub Actions</span>
-                <span>PyTest</span>
-                <span>SODA</span>
-              </div>
-            </article>
-            <article class="tool-cluster">
-              <p class="tool-cluster-label">Streaming and AI</p>
-              <div class="chip-grid">
-                <span>Kafka</span>
-                <span>Apache Flink</span>
-                <span>Neo4j</span>
-                <span>Azure OpenAI</span>
-                <span>LangChain</span>
-                <span>RAG</span>
-                <span>Vector databases</span>
-                <span>Power BI</span>
-                <span>Databricks SQL</span>
-              </div>
-            </article>
-          </div>
-        </section>
+              <ul class="bullet-list">
+                <li>DuckDB and Parquet local lakehouse</li>
+                <li>240-participant synthetic trial dataset</li>
+                <li>Passing test suite and quality gates</li>
+              </ul>
 
-        <section class="section philosophy-panel">
-          <div>
-            <p class="section-kicker">Working style</p>
-            <h2>I care about architecture, but I care more about whether the thing survives contact with production.</h2>
-          </div>
-          <div class="philosophy-list">
-            <p>Design for operations, not just implementation.</p>
-            <p>Use metrics and tests to defend engineering decisions.</p>
-            <p>Keep data governance close to platform design, not as an afterthought.</p>
-          </div>
-        </section>
+              <div class="hero-actions">
+                <a class="button button-primary" href="https://github.com/rohitsagar363/clinical-trial-lakehouse-observatory" target="_blank" rel="noopener">Open repo</a>
+              </div>
+            </section>
 
-        <section id="contact" class="section contact-section">
-          <div>
-            <p class="section-kicker">Contact</p>
-            <h2>Open to senior data engineering and platform roles.</h2>
-            <p>
-              If you need someone who can move between platform architecture, PySpark implementation,
-              governance, validation, and delivery to analytics teams, reach out.
-            </p>
-          </div>
-          <div class="contact-actions">
-            <a class="button button-primary" href="mailto:rohithsagarkarnala@gmail.com">Email Rohith</a>
-            <a class="button button-secondary" href="https://www.linkedin.com/in/rohithsagar" target="_blank" rel="noopener">LinkedIn</a>
+            <section class="panel">
+              <div class="panel-header">
+                <div>
+                  <p class="panel-kicker">Streaming</p>
+                  <h3>Payer Claims Streaming Intelligence</h3>
+                </div>
+                <span class="pill">Event pipeline</span>
+              </div>
+
+              <p class="panel-copy">
+                Replayable healthcare event pipeline that models claims and member activity into an operational
+                dashboard and intervention queue.
+              </p>
+
+              <ul class="bullet-list">
+                <li>JSONL batch replay for streaming-style ingestion</li>
+                <li>Claims ops dashboard and intervention queue</li>
+                <li>Passing test suite and local demo run</li>
+              </ul>
+
+              <div class="hero-actions">
+                <a class="button button-primary" href="https://github.com/rohitsagar363/payer-claims-streaming-intelligence" target="_blank" rel="noopener">Open repo</a>
+              </div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-header">
+                <div>
+                  <p class="panel-kicker">Async ingestion</p>
+                  <h3>Governed Support Analytics Platform</h3>
+                </div>
+                <span class="pill">Retry aware</span>
+              </div>
+
+              <p class="panel-copy">
+                Async support-ticket ingestion system with retry handling, bronze raw landing, silver normalization,
+                and gold SLA and KPI marts.
+              </p>
+
+              <ul class="bullet-list">
+                <li>Mock paginated API with transient failure simulation</li>
+                <li>SLA breach queue and support KPI outputs</li>
+                <li>Passing test suite and local demo run</li>
+              </ul>
+
+              <div class="hero-actions">
+                <a class="button button-primary" href="https://github.com/rohitsagar363/governed-support-analytics-platform" target="_blank" rel="noopener">Open repo</a>
+              </div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-header">
+                <div>
+                  <p class="panel-kicker">Profile</p>
+                  <h3>Rohith Sagar Karnala</h3>
+                </div>
+                <span class="pill">Senior Data Engineer</span>
+              </div>
+
+              <p class="panel-copy">
+                Portfolio direction: regulated data platforms, lakehouse modernization, streaming systems,
+                and production-minded analytics engineering.
+              </p>
+
+              <div class="hero-actions">
+                <a class="button button-secondary" href="https://www.linkedin.com/in/rohithsagar" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="button button-secondary" href="assets/resume/Rohith_Sagar_Karnala_Senior_Data_Engineer.pdf" target="_blank" rel="noopener">Resume</a>
+              </div>
+            </section>
           </div>
         </section>
       </main>
-
-      <footer class="site-footer">
-        <p>Rohith Sagar Karnala</p>
-        <p>Senior Data Engineer | AWS, Azure, Databricks, Streaming, GenAI</p>
-      </footer>
     </div>
 
     <script src="assets/js/site.js"></script>
