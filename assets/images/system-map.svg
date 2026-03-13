@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="640" viewBox="0 0 760 640" fill="none">
+  <rect width="760" height="640" rx="36" fill="#111B21"/>
+  <rect x="26" y="26" width="708" height="588" rx="28" stroke="rgba(243,236,220,0.14)"/>
+  <text x="48" y="72" fill="#74E0D0" font-family="Space Grotesk, Arial, sans-serif" font-size="18" letter-spacing="4">DELIVERY SYSTEM MAP</text>
+  <text x="48" y="112" fill="#F3ECDC" font-family="Fraunces, Georgia, serif" font-size="40">How the work tends to fit together</text>
+
+  <rect x="48" y="156" width="170" height="88" rx="20" fill="#18242B" stroke="rgba(243,236,220,0.12)"/>
+  <text x="68" y="189" fill="#74E0D0" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">SOURCE SYSTEMS</text>
+  <text x="68" y="216" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="18">Oracle, Salesforce,</text>
+  <text x="68" y="239" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="18">SQL Server, APIs</text>
+
+  <rect x="296" y="156" width="170" height="88" rx="20" fill="#18242B" stroke="rgba(243,236,220,0.12)"/>
+  <text x="316" y="189" fill="#74E0D0" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">INGESTION</text>
+  <text x="316" y="216" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="18">Glue, ADF, async</text>
+  <text x="316" y="239" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="18">extractors, Kafka</text>
+
+  <rect x="544" y="156" width="170" height="88" rx="20" fill="#18242B" stroke="rgba(243,236,220,0.12)"/>
+  <text x="564" y="189" fill="#74E0D0" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">PLATFORM LAYERS</text>
+  <text x="564" y="216" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="18">Bronze, silver, gold</text>
+  <text x="564" y="239" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="18">marts and serving</text>
+
+  <rect x="80" y="324" width="250" height="116" rx="24" fill="#15242B" stroke="rgba(243,236,220,0.12)"/>
+  <text x="104" y="360" fill="#F0A35A" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">GOVERNANCE AND QUALITY</text>
+  <text x="104" y="392" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="22">Lake Formation, PHI masking,</text>
+  <text x="104" y="421" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="22">PyTest, SODA, lineage checks</text>
+
+  <rect x="430" y="324" width="250" height="116" rx="24" fill="#15242B" stroke="rgba(243,236,220,0.12)"/>
+  <text x="454" y="360" fill="#F0A35A" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">ORCHESTRATION AND FINOPS</text>
+  <text x="454" y="392" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="22">Step Functions, EventBridge,</text>
+  <text x="454" y="421" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="22">CI/CD, right-sizing, monitoring</text>
+
+  <rect x="212" y="490" width="332" height="84" rx="24" fill="#1A2A31" stroke="rgba(243,236,220,0.12)"/>
+  <text x="238" y="523" fill="#74E0D0" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">BUSINESS OUTCOMES</text>
+  <text x="238" y="552" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="22">Power BI dashboards, KPI marts, exception queues</text>
+
+  <path d="M218 200H296" stroke="#74E0D0" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M466 200H544" stroke="#74E0D0" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M205 244V324" stroke="#F0A35A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M629 244V324" stroke="#F0A35A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M330 382H430" stroke="#F3ECDC" stroke-opacity="0.28" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M378 440V490" stroke="#74E0D0" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

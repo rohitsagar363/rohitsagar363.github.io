@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="470" viewBox="0 0 720 470" fill="none">
+  <rect width="720" height="470" rx="30" fill="#10181D"/>
+  <text x="34" y="54" fill="#74E0D0" font-family="Space Grotesk, Arial, sans-serif" font-size="16" letter-spacing="4">PAYER CLAIMS STREAMING INTELLIGENCE</text>
+
+  <rect x="34" y="96" width="164" height="88" rx="20" fill="#16242A" stroke="rgba(243,236,220,0.12)"/>
+  <text x="58" y="126" fill="#74E0D0" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">EVENT INPUTS</text>
+  <text x="58" y="153" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="18">Member, provider,</text>
+  <text x="58" y="176" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="18">claim, adjudication</text>
+
+  <rect x="258" y="96" width="208" height="88" rx="20" fill="#1E2D33" stroke="rgba(243,236,220,0.12)"/>
+  <text x="282" y="126" fill="#F0A35A" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">REPLAY ENGINE</text>
+  <text x="282" y="153" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="18">Ordered event batches</text>
+  <text x="282" y="176" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="18">simulate streaming state</text>
+
+  <rect x="526" y="96" width="160" height="88" rx="20" fill="#16242A" stroke="rgba(243,236,220,0.12)"/>
+  <text x="554" y="126" fill="#74E0D0" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">CURATED LAYERS</text>
+  <text x="554" y="153" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="18">Bronze, silver,</text>
+  <text x="554" y="176" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="18">gold outputs</text>
+
+  <path d="M198 140H258" stroke="#74E0D0" stroke-width="3" stroke-linecap="round"/>
+  <path d="M466 140H526" stroke="#74E0D0" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="34" y="240" width="302" height="168" rx="24" fill="#18242B"/>
+  <text x="60" y="278" fill="#74E0D0" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">OPERATIONAL LOGIC</text>
+  <text x="60" y="314" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="24">Stateful prioritization</text>
+  <text x="60" y="345" fill="#D7DDD3" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• lagging adjudication detection</text>
+  <text x="60" y="372" fill="#D7DDD3" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• high-risk member routing</text>
+  <text x="60" y="399" fill="#D7DDD3" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• provider-level concentration views</text>
+
+  <rect x="374" y="240" width="312" height="168" rx="24" fill="#F3ECDC"/>
+  <text x="400" y="278" fill="#9A5F1D" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">GOLD TABLES</text>
+  <text x="400" y="314" fill="#0E171C" font-family="Space Grotesk, Arial, sans-serif" font-size="24">Claims ops outputs</text>
+  <text x="400" y="345" fill="#46575C" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• claims operations dashboard</text>
+  <text x="400" y="372" fill="#46575C" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• member intervention queue</text>
+  <text x="400" y="399" fill="#46575C" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• daily throughput signals</text>
+</svg>

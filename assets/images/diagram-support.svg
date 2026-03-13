@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="470" viewBox="0 0 720 470" fill="none">
+  <rect width="720" height="470" rx="30" fill="#F4EEE3"/>
+  <text x="34" y="54" fill="#0F6C67" font-family="Space Grotesk, Arial, sans-serif" font-size="16" letter-spacing="4">GOVERNED SUPPORT ANALYTICS PLATFORM</text>
+
+  <rect x="36" y="92" width="192" height="94" rx="22" fill="#FFF9EE" stroke="#13242C" stroke-opacity="0.12"/>
+  <text x="62" y="124" fill="#0F6C67" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">ASYNC EXTRACTORS</text>
+  <text x="62" y="152" fill="#0E171C" font-family="Space Grotesk, Arial, sans-serif" font-size="18">Ticket APIs, retries,</text>
+  <text x="62" y="175" fill="#0E171C" font-family="Space Grotesk, Arial, sans-serif" font-size="18">raw event collection</text>
+
+  <rect x="274" y="92" width="172" height="94" rx="22" fill="#DDF6F2"/>
+  <text x="316" y="124" fill="#0F6C67" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">NORMALIZE</text>
+  <text x="322" y="152" fill="#0E171C" font-family="Space Grotesk, Arial, sans-serif" font-size="18">Silver entity</text>
+  <text x="322" y="175" fill="#0E171C" font-family="Space Grotesk, Arial, sans-serif" font-size="18">shaping</text>
+
+  <rect x="492" y="92" width="192" height="94" rx="22" fill="#17242B"/>
+  <text x="522" y="124" fill="#74E0D0" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">SERVE</text>
+  <text x="522" y="152" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="18">SLA queue and support</text>
+  <text x="522" y="175" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="18">KPI marts</text>
+
+  <path d="M228 139H274" stroke="#0F6C67" stroke-width="3" stroke-linecap="round"/>
+  <path d="M446 139H492" stroke="#0F6C67" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="36" y="232" width="300" height="176" rx="24" fill="#17242B"/>
+  <text x="62" y="270" fill="#74E0D0" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">RESILIENCE FEATURES</text>
+  <text x="62" y="306" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="24">Retry-aware ingestion</text>
+  <text x="62" y="337" fill="#D7DDD3" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• rate-limit handling</text>
+  <text x="62" y="364" fill="#D7DDD3" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• idempotent raw landing</text>
+  <text x="62" y="391" fill="#D7DDD3" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• testable transformation boundaries</text>
+
+  <rect x="378" y="232" width="306" height="176" rx="24" fill="#FFF9EE" stroke="#13242C" stroke-opacity="0.12"/>
+  <text x="404" y="270" fill="#9A5F1D" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">ANALYST OUTPUTS</text>
+  <text x="404" y="306" fill="#0E171C" font-family="Space Grotesk, Arial, sans-serif" font-size="24">Support operations views</text>
+  <text x="404" y="337" fill="#46575C" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• SLA breach queue</text>
+  <text x="404" y="364" fill="#46575C" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• monthly support KPIs</text>
+  <text x="404" y="391" fill="#46575C" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• issue category trend analysis</text>
+</svg>

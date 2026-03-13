@@ -6,21 +6,23 @@
     <title>Rohith Sagar Karnala | Senior Data Engineer</title>
     <meta
       name="description"
-      content="Portfolio for Rohith Sagar Karnala, a Senior Data Engineer focused on governed data platforms, lakehouse modernization, streaming systems, and applied analytics engineering."
+      content="Portfolio for Rohith Sagar Karnala, a Senior Data Engineer building governed lakehouses, healthcare data platforms, streaming systems, and analytics products across AWS and Azure."
     >
     <meta property="og:title" content="Rohith Sagar Karnala | Senior Data Engineer">
     <meta
       property="og:description"
-      content="Senior Data Engineer building governed lakehouses, streaming pipelines, and analytics systems across AWS and Azure."
+      content="Senior Data Engineer focused on regulated data platforms, lakehouse modernization, streaming pipelines, and production-grade analytics delivery."
     >
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/images/og-card.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
     <header class="site-header">
       <a class="brand" href="#top">
         <span class="brand-mark">RS</span>
@@ -31,205 +33,306 @@
       </a>
 
       <nav class="site-nav" aria-label="Primary">
-        <a href="#projects">Projects</a>
+        <a href="#work">Work</a>
+        <a href="#systems">Systems</a>
         <a href="#experience">Experience</a>
-        <a href="#toolkit">Toolkit</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="top" class="page-shell">
-      <section class="hero section">
-        <div class="hero-copy">
-          <p class="eyebrow">AWS | Azure | Databricks | Streaming | GenAI</p>
-          <h1>Data platforms with enterprise discipline, not tutorial energy.</h1>
+      <section class="hero">
+        <div class="hero-copy section-reveal">
+          <p class="eyebrow">AWS • Azure • Databricks • Streaming • GenAI</p>
+          <h1>Built for teams that need governed data systems to survive real production pressure.</h1>
           <p class="hero-summary">
-            I build governed lakehouses, metadata-driven ETL frameworks, streaming systems, and analytics products for
-            healthcare, pharma, and operations-heavy teams. My focus is practical delivery: lower compute cost, stronger
-            data quality, better governance, and outputs that downstream teams can trust.
+            I design lakehouses, medallion pipelines, metadata-driven ETL frameworks, and analytics products for
+            healthcare and pharma teams where correctness, access control, and delivery discipline matter as much as raw throughput.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View projects</a>
+            <a class="button button-primary" href="#work">See selected work</a>
             <a class="button button-secondary" href="assets/resume/Rohith_Sagar_Karnala_Senior_Data_Engineer.pdf" target="_blank" rel="noopener">Resume</a>
             <a class="button button-secondary" href="mailto:rohithsagarkarnala@gmail.com">Email</a>
           </div>
 
-          <ul class="hero-list">
-            <li>450+ pipelines migrated into an AWS lakehouse</li>
-            <li>50% compute cost reduction through workload tuning and FinOps</li>
-            <li>99.8% reliability via automated validation with PyTest and SODA</li>
-          </ul>
+          <div class="trust-strip">
+            <div class="trust-item">
+              <span class="trust-value">450+</span>
+              <span class="trust-label">legacy pipelines migrated to AWS lakehouse patterns</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-value">50%</span>
+              <span class="trust-label">compute reduction through workload tuning and FinOps</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-value">99.8%</span>
+              <span class="trust-label">reliability with PyTest and SODA-backed validation</span>
+            </div>
+          </div>
         </div>
 
-        <aside class="hero-stats">
-          <article class="stat-card">
-            <p class="stat-label">Regulated delivery</p>
-            <strong>HIPAA / GxP</strong>
-            <span>Healthcare and clinical data platforms with governance built in</span>
-          </article>
-          <article class="stat-card">
-            <p class="stat-label">Public project set</p>
-            <strong>4 major builds</strong>
-            <span>Lakehouse, streaming, async ingestion, and product workflow MVPs</span>
-          </article>
-          <article class="stat-card">
-            <p class="stat-label">Core strengths</p>
-            <strong>AWS + Azure</strong>
-            <span>Lakehouse modernization, orchestration, quality, and analytics delivery</span>
-          </article>
-          <article class="stat-card">
-            <p class="stat-label">Location</p>
-            <strong>Buffalo, NY</strong>
-            <span>Open to senior data engineering and platform roles</span>
-          </article>
+        <aside class="hero-visual section-reveal">
+          <div class="identity-card">
+            <img class="avatar" src="assets/images/avatar.svg" alt="Illustrated avatar of Rohith Sagar Karnala">
+            <div class="identity-copy">
+              <p class="eyebrow">Buffalo, NY</p>
+              <h2>Senior data engineering for regulated domains.</h2>
+              <p>
+                Strongest signal: clinical and healthcare platforms, multi-cloud delivery, metadata-driven systems,
+                and data products that business teams can actually consume.
+              </p>
+            </div>
+          </div>
+          <img class="hero-map" src="assets/images/system-map.svg" alt="Systems map showing governed sources, platform layers, orchestration, quality, and analytics delivery">
         </aside>
       </section>
 
-      <section id="projects" class="section">
+      <section id="work" class="section section-reveal">
         <div class="section-heading">
-          <p class="section-kicker">Featured work</p>
-          <h2>Standalone projects that back up the profile.</h2>
+          <p class="section-kicker">Selected work</p>
+          <h2>Three public builds that prove current execution range.</h2>
+          <p class="section-intro">
+            The portfolio should not read like a resume copy. These projects show batch lakehouse delivery, replayable streaming logic,
+            and async ingestion with explicit quality layers and business-facing outputs.
+          </p>
         </div>
 
-        <div class="card-grid">
-          <article class="panel project-card">
-            <div class="panel-header">
-              <div>
-                <p class="panel-kicker">Lakehouse</p>
-                <h3>Clinical Trial Lakehouse Observatory</h3>
+        <div class="case-study-grid">
+          <article class="case-study">
+            <div class="case-copy">
+              <p class="panel-kicker">01 • Lakehouse platform</p>
+              <h3>Clinical Trial Lakehouse Observatory</h3>
+              <p class="panel-copy">
+                Local-first clinical analytics platform that lands trial data in bronze parquet, conforms research entities in silver,
+                and publishes gold study KPI, enrollment, and patient-risk marts.
+              </p>
+              <ul class="detail-list">
+                <li>Shows governed medallion thinking without hiding behind vendor-specific magic.</li>
+                <li>Fits your Bristol Myers Squibb and AbbVie credibility better than a generic toy dataset.</li>
+                <li>Includes runnable pipeline, synthetic source generation, quality checks, and tests.</li>
+              </ul>
+              <div class="meta-row">
+                <span class="pill">Python</span>
+                <span class="pill">DuckDB</span>
+                <span class="pill">Parquet</span>
+                <span class="pill">Data quality</span>
               </div>
-              <span class="pill">DuckDB · Parquet · Python</span>
+              <div class="button-row">
+                <a class="button button-primary" href="https://github.com/rohitsagar363/clinical-trial-lakehouse-observatory" target="_blank" rel="noopener">View repo</a>
+              </div>
             </div>
-            <p class="panel-copy">
-              Local-first lakehouse project for regulated clinical-trial analytics with bronze and silver conformance,
-              gold KPI marts, and participant risk monitoring.
-            </p>
-            <div class="button-row">
-              <a class="button button-primary" href="https://github.com/rohitsagar363/clinical-trial-lakehouse-observatory" target="_blank" rel="noopener">GitHub</a>
+            <div class="case-visual">
+              <img src="assets/images/diagram-clinical.svg" alt="Architecture diagram for the Clinical Trial Lakehouse Observatory project">
             </div>
           </article>
 
-          <article class="panel project-card">
-            <div class="panel-header">
-              <div>
-                <p class="panel-kicker">Streaming</p>
-                <h3>Payer Claims Streaming Intelligence</h3>
+          <article class="case-study case-study-reverse">
+            <div class="case-copy">
+              <p class="panel-kicker">02 • Replayable streaming</p>
+              <h3>Payer Claims Streaming Intelligence</h3>
+              <p class="panel-copy">
+                Replay-based healthcare claims pipeline that converts member, provider, and adjudication events into an operations dashboard
+                and intervention queue for exception-heavy workflows.
+              </p>
+              <ul class="detail-list">
+                <li>Positions you beyond ETL-only work by showing event thinking and operational prioritization.</li>
+                <li>Keeps the domain aligned with healthcare instead of switching to an unrelated sample industry.</li>
+                <li>Produces gold outputs that mimic what a claims operations team would actually review.</li>
+              </ul>
+              <div class="meta-row">
+                <span class="pill">Streaming patterns</span>
+                <span class="pill">Python</span>
+                <span class="pill">DuckDB</span>
+                <span class="pill">Operations analytics</span>
               </div>
-              <span class="pill">Replay batches · Python · DuckDB</span>
+              <div class="button-row">
+                <a class="button button-primary" href="https://github.com/rohitsagar363/payer-claims-streaming-intelligence" target="_blank" rel="noopener">View repo</a>
+              </div>
             </div>
-            <p class="panel-copy">
-              Replayable healthcare event pipeline that turns synthetic member and claim activity into a claims ops
-              dashboard and intervention queue.
-            </p>
-            <div class="button-row">
-              <a class="button button-primary" href="https://github.com/rohitsagar363/payer-claims-streaming-intelligence" target="_blank" rel="noopener">GitHub</a>
+            <div class="case-visual">
+              <img src="assets/images/diagram-claims.svg" alt="Architecture diagram for the Payer Claims Streaming Intelligence project">
             </div>
           </article>
 
-          <article class="panel project-card">
-            <div class="panel-header">
-              <div>
-                <p class="panel-kicker">Async ingestion</p>
-                <h3>Governed Support Analytics Platform</h3>
+          <article class="case-study">
+            <div class="case-copy">
+              <p class="panel-kicker">03 • Async ingestion</p>
+              <h3>Governed Support Analytics Platform</h3>
+              <p class="panel-copy">
+                Retry-aware async extraction workflow that lands raw support events, normalizes them into curated entities,
+                and exposes SLA breach queues plus support KPI marts.
+              </p>
+              <ul class="detail-list">
+                <li>Demonstrates ingestion resilience, not just transformation logic.</li>
+                <li>Extends your async ETL and platform engineering story beyond notebook-first examples.</li>
+                <li>Useful signal for teams hiring for platform, operations, or SaaS analytics pipelines.</li>
+              </ul>
+              <div class="meta-row">
+                <span class="pill">AsyncIO</span>
+                <span class="pill">Retry logic</span>
+                <span class="pill">Bronze / Silver / Gold</span>
+                <span class="pill">Testing</span>
               </div>
-              <span class="pill">AsyncIO · Retry logic · Python</span>
-            </div>
-            <p class="panel-copy">
-              Async ticket ingestion project with retry-aware extraction, raw bronze landing, silver normalization,
-              and gold SLA and support KPI marts.
-            </p>
-            <div class="button-row">
-              <a class="button button-primary" href="https://github.com/rohitsagar363/governed-support-analytics-platform" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </article>
-
-          <article class="panel project-card">
-            <div class="panel-header">
-              <div>
-                <p class="panel-kicker">Analytics engineering</p>
-                <h3>Portfolio delivery system</h3>
+              <div class="button-row">
+                <a class="button button-primary" href="https://github.com/rohitsagar363/governed-support-analytics-platform" target="_blank" rel="noopener">View repo</a>
               </div>
-              <span class="pill">GitHub Pages · Case studies · Documentation</span>
             </div>
-            <p class="panel-copy">
-              Structured project storytelling, recruiter-focused README design, and proof-first portfolio packaging for
-              data engineering roles across healthcare, pharma, and analytics platforms.
-            </p>
-            <div class="button-row">
-              <a class="button button-primary" href="https://github.com/rohitsagar363/rohitsagar363.github.io" target="_blank" rel="noopener">Portfolio Repo</a>
+            <div class="case-visual">
+              <img src="assets/images/diagram-support.svg" alt="Architecture diagram for the Governed Support Analytics Platform project">
             </div>
           </article>
         </div>
       </section>
 
-      <section id="experience" class="section">
+      <section id="systems" class="section section-reveal">
         <div class="section-heading">
-          <p class="section-kicker">Experience</p>
-          <h2>Work that has the strongest signal.</h2>
+          <p class="section-kicker">System design approach</p>
+          <h2>Patterns I keep repeating because they hold up in production.</h2>
         </div>
 
-        <div class="card-grid card-grid-three">
-          <article class="panel project-card">
-            <p class="panel-kicker">Bristol Myers Squibb</p>
-            <h3>AWS lakehouse migration</h3>
+        <div class="pattern-grid">
+          <article class="pattern-card">
+            <p class="panel-kicker">Governance first</p>
+            <h3>Access, lineage, and quality are built into the path to data.</h3>
             <p class="panel-copy">
-              Re-architected 450+ legacy pipelines into an Apache Iceberg lakehouse on S3 with Glue, Redshift, Lake Formation,
-              and governed clinical analytics delivery.
+              HIPAA and GxP work does not tolerate “fix it later.” The architecture has to make the safe path the default path.
             </p>
           </article>
-          <article class="panel project-card">
-            <p class="panel-kicker">Humana</p>
-            <h3>Azure Databricks healthcare platform</h3>
+          <article class="pattern-card">
+            <p class="panel-kicker">Metadata-driven execution</p>
+            <h3>Repeatable pipeline generation beats one-off heroic code.</h3>
             <p class="panel-copy">
-              Led migration from SQL Server silos into a medallion lakehouse using ADF and Databricks for PHI-heavy healthcare analytics.
+              Frameworks like Nabu and Yeedu matter because they compress delivery time across many migrations and reduce operator error.
             </p>
           </article>
-          <article class="panel project-card">
-            <p class="panel-kicker">Modak Analytics</p>
-            <h3>Framework-first data engineering</h3>
+          <article class="pattern-card">
+            <p class="panel-kicker">Business-ready outputs</p>
+            <h3>Gold layers should map cleanly to analyst and operator decisions.</h3>
             <p class="panel-copy">
-              Built modular PySpark frameworks, orchestration support, CI-ready delivery patterns, and internal knowledge intelligence experiments.
+              Curated marts, KPI tables, and exception queues are the output. The pipeline is only valuable if downstream teams can use it.
+            </p>
+          </article>
+          <article class="pattern-card">
+            <p class="panel-kicker">Operational discipline</p>
+            <h3>Testing, observability, and cost control belong in the design.</h3>
+            <p class="panel-copy">
+              PyTest, SODA, CI/CD, monitoring, and compute tuning are not polish. They are part of shipping reliable data systems.
             </p>
           </article>
         </div>
       </section>
 
-      <section id="toolkit" class="section">
+      <section id="experience" class="section section-reveal">
+        <div class="section-heading">
+          <p class="section-kicker">Experience signal</p>
+          <h2>Enterprise work that supports the public portfolio.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-marker">BMS</span>
+            <div class="timeline-copy">
+              <h3>Bristol Myers Squibb</h3>
+              <p>
+                Migrated 450+ pipelines into an Apache Iceberg lakehouse on S3 using Glue, Step Functions, Redshift, and Lake Formation
+                to support governed clinical analytics and PHI-aware access control.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-marker">HUM</span>
+            <div class="timeline-copy">
+              <h3>Humana</h3>
+              <p>
+                Led SQL Server to Azure Databricks migration work with medallion architecture, SCD Type-2 history, Power BI-ready datasets,
+                and CI/CD patterns for multi-tenant healthcare environments.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-marker">ABB</span>
+            <div class="timeline-copy">
+              <h3>AbbVie</h3>
+              <p>
+                Built high-volume Spark and EMR Serverless data delivery into Oracle for 200+ clinical workflows with data quality monitoring,
+                secure credential handling, and analyst-facing gold schemas.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-marker">MOD</span>
+            <div class="timeline-copy">
+              <h3>Modak Analytics</h3>
+              <p>
+                Built metadata-driven PySpark frameworks, Airflow operator tooling, internal knowledge intelligence ingestion, and standardized
+                deployment patterns using Docker, Terraform, and GitHub Actions.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-reveal">
         <div class="section-heading">
           <p class="section-kicker">Toolkit</p>
-          <h2>Platforms I can ship with.</h2>
+          <h2>Cloud, platform, and delivery stack.</h2>
         </div>
 
-        <div class="chip-grid">
-          <span class="chip">AWS Glue</span>
-          <span class="chip">Apache Iceberg</span>
-          <span class="chip">Azure Databricks</span>
-          <span class="chip">PySpark</span>
-          <span class="chip">dbt</span>
-          <span class="chip">Airflow</span>
-          <span class="chip">Apache Flink</span>
-          <span class="chip">Kafka</span>
-          <span class="chip">Terraform</span>
-          <span class="chip">Docker</span>
-          <span class="chip">Power BI</span>
-          <span class="chip">Azure OpenAI</span>
-          <span class="chip">RAG systems</span>
-          <span class="chip">Snowflake</span>
+        <div class="toolkit-grid">
+          <article class="toolkit-card">
+            <h3>Cloud and lakehouse</h3>
+            <div class="chip-grid">
+              <span class="chip">AWS Glue</span>
+              <span class="chip">Apache Iceberg</span>
+              <span class="chip">EMR Serverless</span>
+              <span class="chip">Redshift</span>
+              <span class="chip">Azure Databricks</span>
+              <span class="chip">Delta Lake</span>
+              <span class="chip">ADF</span>
+              <span class="chip">Snowflake</span>
+            </div>
+          </article>
+          <article class="toolkit-card">
+            <h3>Processing and orchestration</h3>
+            <div class="chip-grid">
+              <span class="chip">PySpark</span>
+              <span class="chip">Scala</span>
+              <span class="chip">Kafka</span>
+              <span class="chip">Apache Flink</span>
+              <span class="chip">Airflow</span>
+              <span class="chip">dbt</span>
+              <span class="chip">Step Functions</span>
+              <span class="chip">AsyncIO</span>
+            </div>
+          </article>
+          <article class="toolkit-card">
+            <h3>Quality, DevOps, and AI</h3>
+            <div class="chip-grid">
+              <span class="chip">PyTest</span>
+              <span class="chip">SODA</span>
+              <span class="chip">Terraform</span>
+              <span class="chip">Docker</span>
+              <span class="chip">GitHub Actions</span>
+              <span class="chip">Power BI</span>
+              <span class="chip">Azure OpenAI</span>
+              <span class="chip">RAG systems</span>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section id="contact" class="section">
-        <div class="panel contact-panel">
-          <div>
+      <section id="contact" class="section section-reveal">
+        <div class="contact-panel">
+          <div class="contact-copy">
             <p class="section-kicker">Contact</p>
-            <h2>Open to senior data engineering and platform roles.</h2>
+            <h2>Open to senior data engineering, platform, and analytics infrastructure roles.</h2>
             <p class="panel-copy">
-              Reach out if you need someone who can move between platform architecture, PySpark implementation,
-              governance, streaming, validation, and analytics delivery.
+              If you need someone who can move from architecture and framework design into implementation, testing,
+              governance, and stakeholder-facing delivery, reach out.
             </p>
           </div>
-          <div class="button-row">
+          <div class="contact-actions">
             <a class="button button-primary" href="mailto:rohithsagarkarnala@gmail.com">Email</a>
             <a class="button button-secondary" href="https://www.linkedin.com/in/rohithsagar" target="_blank" rel="noopener">LinkedIn</a>
             <a class="button button-secondary" href="https://github.com/rohitsagar363" target="_blank" rel="noopener">GitHub</a>

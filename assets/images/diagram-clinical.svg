@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="470" viewBox="0 0 720 470" fill="none">
+  <rect width="720" height="470" rx="30" fill="#F5EEDF"/>
+  <text x="34" y="54" fill="#0E171C" font-family="Space Grotesk, Arial, sans-serif" font-size="16" letter-spacing="4">CLINICAL TRIAL LAKEHOUSE OBSERVATORY</text>
+  <rect x="34" y="92" width="150" height="84" rx="18" fill="#FFF9EE" stroke="#13242C" stroke-opacity="0.12"/>
+  <text x="56" y="122" fill="#0F6C67" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">TRIAL SOURCES</text>
+  <text x="56" y="148" fill="#0E171C" font-family="Space Grotesk, Arial, sans-serif" font-size="18">Sites, patients,</text>
+  <text x="56" y="171" fill="#0E171C" font-family="Space Grotesk, Arial, sans-serif" font-size="18">events, labs</text>
+
+  <rect x="218" y="92" width="130" height="84" rx="18" fill="#DDF6F2"/>
+  <text x="252" y="122" fill="#0F6C67" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">BRONZE</text>
+  <text x="248" y="151" fill="#0E171C" font-family="Space Grotesk, Arial, sans-serif" font-size="20">Parquet</text>
+
+  <rect x="390" y="92" width="130" height="84" rx="18" fill="#DDF6F2"/>
+  <text x="430" y="122" fill="#0F6C67" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">SILVER</text>
+  <text x="414" y="151" fill="#0E171C" font-family="Space Grotesk, Arial, sans-serif" font-size="20">Conformed</text>
+
+  <rect x="560" y="92" width="126" height="84" rx="18" fill="#FCE6CF"/>
+  <text x="596" y="122" fill="#9A5F1D" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">GOLD</text>
+  <text x="590" y="151" fill="#0E171C" font-family="Space Grotesk, Arial, sans-serif" font-size="20">Study KPIs</text>
+
+  <path d="M184 134H218" stroke="#0F6C67" stroke-width="3" stroke-linecap="round"/>
+  <path d="M348 134H390" stroke="#0F6C67" stroke-width="3" stroke-linecap="round"/>
+  <path d="M520 134H560" stroke="#0F6C67" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="34" y="232" width="300" height="180" rx="24" fill="#FFF9EE" stroke="#13242C" stroke-opacity="0.12"/>
+  <text x="58" y="270" fill="#9A5F1D" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">QUALITY AND CONTROLS</text>
+  <text x="58" y="307" fill="#0E171C" font-family="Space Grotesk, Arial, sans-serif" font-size="24">Validation checks</text>
+  <text x="58" y="338" fill="#43545A" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• schema conformance</text>
+  <text x="58" y="365" fill="#43545A" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• participant risk thresholds</text>
+  <text x="58" y="392" fill="#43545A" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• site enrollment integrity</text>
+
+  <rect x="370" y="232" width="316" height="180" rx="24" fill="#17242B"/>
+  <text x="396" y="270" fill="#74E0D0" font-family="Space Grotesk, Arial, sans-serif" font-size="13" letter-spacing="2">SERVING OUTPUTS</text>
+  <text x="396" y="307" fill="#F3ECDC" font-family="Space Grotesk, Arial, sans-serif" font-size="24">Gold marts</text>
+  <text x="396" y="338" fill="#D7DDD3" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• site enrollment summary</text>
+  <text x="396" y="365" fill="#D7DDD3" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• patient risk monitor</text>
+  <text x="396" y="392" fill="#D7DDD3" font-family="Space Grotesk, Arial, sans-serif" font-size="18">• study KPI dashboard</text>
+</svg>
