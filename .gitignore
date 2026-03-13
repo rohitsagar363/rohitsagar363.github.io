@@ -1,1 +1,5 @@
 reference-portfolio/
+references/
+**/.venv/
+**/.pytest_cache/
+**/__pycache__/
