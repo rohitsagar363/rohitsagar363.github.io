@@ -15,7 +15,6 @@ Project repositories live separately:
 - `clinical-trial-lakehouse-observatory`
 - `payer-claims-streaming-intelligence`
 - `governed-support-analytics-platform`
-- `denialflow` (separate app repo)
 
 ## Local preview
 
