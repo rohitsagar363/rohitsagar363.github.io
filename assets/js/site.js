@@ -5,12 +5,12 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       return;
     }
 
-    const section = document.querySelector(target);
-    if (!section) {
+    const element = document.querySelector(target);
+    if (!element) {
       return;
     }
 
     event.preventDefault();
-    section.scrollIntoView({ behavior: "smooth", block: "start" });
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
