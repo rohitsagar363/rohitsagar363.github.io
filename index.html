@@ -35,6 +35,7 @@
       <nav class="site-nav" aria-label="Primary">
         <a href="#work">Work</a>
         <a href="#systems">Systems</a>
+        <a href="#writing">Writing</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -219,6 +220,55 @@
             <p class="panel-copy">
               PyTest, SODA, CI/CD, monitoring, and compute tuning are not polish. They are part of shipping reliable data systems.
             </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="writing" class="section section-reveal">
+        <div class="section-heading">
+          <p class="section-kicker">Engineering writing</p>
+          <h2>Depth artifacts that show design judgment, not just tool familiarity.</h2>
+          <p class="section-intro">
+            Strong engineering portfolios need reasoning traces. These pieces show how architecture decisions were made
+            and how failure modes are handled in production-shaped systems.
+          </p>
+        </div>
+
+        <div class="writing-grid">
+          <article class="writing-card">
+            <p class="panel-kicker">ADR</p>
+            <h3>Why the portfolio projects use a local-first lakehouse stack</h3>
+            <p class="panel-copy">
+              Decision record covering why DuckDB and Parquet were chosen for public demos, what tradeoffs were accepted,
+              and how the design still maps cleanly to warehouse and cloud patterns.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" href="writing/adr-local-first-lakehouse.html">Read ADR</a>
+            </div>
+          </article>
+
+          <article class="writing-card">
+            <p class="panel-kicker">Postmortem</p>
+            <h3>Retry storms and duplicate ingestion in async ETL</h3>
+            <p class="panel-copy">
+              Failure analysis of an async extraction pattern, including symptom timeline, root cause, remediation,
+              and the operational controls added afterward.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" href="writing/postmortem-async-retries.html">Read Postmortem</a>
+            </div>
+          </article>
+
+          <article class="writing-card">
+            <p class="panel-kicker">AI governance</p>
+            <h3>How AI is used and verified in public engineering work</h3>
+            <p class="panel-copy">
+              Documentation standard for where AI assists, what gets rewritten manually, and how generated output is
+              validated before it becomes part of a public project.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" href="writing/ai-use-and-verification.html">Read policy</a>
+            </div>
           </article>
         </div>
       </section>

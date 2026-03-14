@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ADR | Local-First Lakehouse Stack</title>
+    <meta
+      name="description"
+      content="Architecture decision record describing why the portfolio projects use a local-first DuckDB and Parquet stack."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <main class="essay-shell">
+      <div class="essay-hero">
+        <a class="essay-back" href="../index.html#writing">Back to portfolio</a>
+        <p class="eyebrow">ADR 001</p>
+      </div>
+
+      <article class="essay">
+        <header>
+          <h1>Why the public portfolio uses a local-first lakehouse stack</h1>
+          <p class="panel-copy">
+            Status: accepted. This ADR explains why the featured portfolio projects use DuckDB and Parquet locally
+            instead of directly exposing managed cloud services in the public repos.
+          </p>
+        </header>
+
+        <section>
+          <h2>Context</h2>
+          <p>
+            The target roles are senior data engineering and platform positions in healthcare and pharma. The portfolio
+            needs to prove architecture judgment, testing discipline, medallion-style modeling, and business-ready
+            outputs without forcing reviewers to provision cloud accounts, secrets, or vendor-specific infrastructure.
+          </p>
+        </section>
+
+        <section>
+          <h2>Decision</h2>
+          <p>
+            Public demo projects use Python, Parquet, and DuckDB as the default execution environment, while keeping
+            the data flow, layering, and quality controls aligned with cloud warehouse and lakehouse patterns.
+          </p>
+          <div class="essay-callout">
+            The objective is portability and inspectability first, not perfect production parity.
+          </div>
+        </section>
+
+        <section>
+          <h2>Why this was chosen</h2>
+          <ul>
+            <li>Reviewers can run the projects immediately without provisioning infrastructure.</li>
+            <li>The architecture remains legible: bronze landing, silver conformance, gold serving, tests, and quality gates.</li>
+            <li>The repos avoid fake cloud complexity created only for portfolio theater.</li>
+            <li>The same concepts map cleanly to Glue, Databricks, Spark, Redshift, Snowflake, and BigQuery patterns.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Tradeoffs</h2>
+          <ul>
+            <li>DuckDB does not prove distributed compute or cluster tuning on its own.</li>
+            <li>Managed-service concerns such as IAM, networking, scheduler permissions, and warehouse scaling are abstracted away.</li>
+            <li>Operational signals like tracing, autoscaling, and queue pressure need to be shown elsewhere in the portfolio.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Compensating controls</h2>
+          <ol>
+            <li>The website and repo documentation explicitly connect local patterns back to cloud-native equivalents.</li>
+            <li>Featured projects include architecture diagrams, quality checks, and tests instead of stopping at notebooks.</li>
+            <li>A separate future infra repo is planned to prove Terraform, environment management, and operational controls.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Result</h2>
+          <p>
+            This approach makes the projects runnable, reviewable, and credible while preserving the architectural shape
+            that matters for senior data engineering evaluation.
+          </p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

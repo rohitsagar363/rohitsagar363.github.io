@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Postmortem | Retry Storms in Async ETL</title>
+    <meta
+      name="description"
+      content="Postmortem of retry storms and duplicate ingestion in an async ETL pipeline."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <main class="essay-shell">
+      <div class="essay-hero">
+        <a class="essay-back" href="../index.html#writing">Back to portfolio</a>
+        <p class="eyebrow">Postmortem</p>
+      </div>
+
+      <article class="essay">
+        <header>
+          <h1>Retry storms and duplicate ingestion in async ETL</h1>
+          <p class="panel-copy">
+            Summary: an async extraction workflow produced duplicate raw records after upstream throttling triggered
+            overlapping retries. This write-up captures the incident shape and the controls added afterward.
+          </p>
+        </header>
+
+        <section>
+          <h2>Impact</h2>
+          <p>
+            Raw landing volume spiked, downstream normalization work reprocessed duplicate payloads, and analyst-facing
+            SLA metrics became temporarily inflated. No data loss occurred, but trust in daily reporting degraded until
+            the pipeline was replayed with corrected controls.
+          </p>
+        </section>
+
+        <section>
+          <h2>Timeline</h2>
+          <ul>
+            <li>T0: upstream API starts returning intermittent rate-limit responses.</li>
+            <li>T0 + 5m: async workers continue retrying with overlapping request windows.</li>
+            <li>T0 + 20m: raw row counts exceed expected batch envelope.</li>
+            <li>T0 + 45m: downstream aggregates show abnormal ticket volume and queue spikes.</li>
+            <li>T0 + 70m: run is halted and replay analysis begins.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Root cause</h2>
+          <p>
+            The extraction layer retried failed requests but did not bind retries tightly enough to idempotent request
+            boundaries. The system treated retried windows as valid new fetches, which allowed duplicate events to land
+            before normalization could deduplicate them.
+          </p>
+        </section>
+
+        <section>
+          <h2>What changed</h2>
+          <ol>
+            <li>Added stronger request identity and replay-safe deduplication keys at the raw landing boundary.</li>
+            <li>Introduced exponential backoff with jitter instead of synchronized retry bursts.</li>
+            <li>Added row-count anomaly thresholds to detect retry amplification earlier.</li>
+            <li>Separated transport retry logging from business-event acceptance metrics.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Operational lessons</h2>
+          <ul>
+            <li>Retries are a resilience feature only when idempotency is explicit.</li>
+            <li>Raw landing should preserve enough metadata to reconstruct request intent during incident review.</li>
+            <li>Volume-based alerts need expected-envelope logic, not just hardcoded thresholds.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Follow-up actions</h2>
+          <p>
+            Future iterations should add distributed tracing, retry budget dashboards, and explicit dead-letter handling
+            so extraction failures can be isolated without contaminating downstream analytics.
+          </p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Use and Verification | Portfolio Standard</title>
+    <meta
+      name="description"
+      content="Documentation standard for how AI is used and verified in public engineering projects."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <main class="essay-shell">
+      <div class="essay-hero">
+        <a class="essay-back" href="../index.html#writing">Back to portfolio</a>
+        <p class="eyebrow">AI use standard</p>
+      </div>
+
+      <article class="essay">
+        <header>
+          <h1>How AI is used and verified in public engineering work</h1>
+          <p class="panel-copy">
+            This standard is intended for portfolio repositories where AI may assist with scaffolding, documentation,
+            or exploratory implementation but does not replace engineering judgment.
+          </p>
+        </header>
+
+        <section>
+          <h2>Where AI may assist</h2>
+          <ul>
+            <li>README structuring and first-pass documentation drafts</li>
+            <li>initial SQL or transformation scaffolding</li>
+            <li>test-case brainstorming and edge-case enumeration</li>
+            <li>diagram drafting and naming alternatives</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>What still requires manual engineering review</h2>
+          <ul>
+            <li>schema design and business-grain decisions</li>
+            <li>quality rules and domain-specific thresholds</li>
+            <li>retry, idempotency, and failure-handling logic</li>
+            <li>security, governance, and cost-sensitive choices</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Verification standard</h2>
+          <ol>
+            <li>Read every generated artifact line by line before keeping it.</li>
+            <li>Rewrite domain logic where the generated output is generic or unverifiable.</li>
+            <li>Add tests and sample-output validation for critical transformations.</li>
+            <li>Check architecture and naming against the real business problem, not the generated default.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>What should appear in repo documentation</h2>
+          <p>
+            Each major repo should eventually include an `AI Use and Verification` section that states what AI touched,
+            what was changed manually, and how correctness was validated.
+          </p>
+        </section>
+
+        <section>
+          <h2>Rationale</h2>
+          <p>
+            In 2026, hiding AI usage is weaker than documenting it clearly. The stronger signal is controlled use,
+            domain-specific review, and evidence that the final engineering decisions are deliberate.
+          </p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
